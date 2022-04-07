@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Navbar({ title }) {
   return (
-    <nav className="navbar mb-16 w-10/12 mx-auto">
+    <nav className="navbar mb-16">
       <div className="container mx-auto">
         <div className="flex-none py-3">
           <Link to="/" className="text-2xl font-bold align-middle">
