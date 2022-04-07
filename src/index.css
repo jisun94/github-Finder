@@ -6,3 +6,8 @@
 body {
   font-family: "Red Hat Text", sans-serif;
 }
+
+.custom-card-image .card.image-full:before {
+  border-radius: 0.5rem;
+  opacity: 0 45;
+}
