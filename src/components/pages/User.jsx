@@ -117,7 +117,7 @@ function User() {
           </div>
         </div>
 
-        <div className="w-full py-5 bm-6 rounded-lg shadow-md stats">
+        <div className="w-full py-5 mb-6 rounded-lg shadow-md stats">
           <div className="stat">
             <div className="stat-figure">
               <FaUsers className="text-3xl md:text-5xl" />
