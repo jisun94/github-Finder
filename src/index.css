@@ -4,10 +4,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap");
 body {
+  min-height: 100vh;
+  background-color: rgb(243, 243, 244);
   font-family: "Red Hat Text", sans-serif;
 }
 
+.wrapper {
+  min-height: 100vh;
+}
 .custom-card-image .card.image-full:before {
   border-radius: 0.5rem;
   opacity: 0 45;
+}
+
+.custom-card-image .card.image-full:before {
+  opacity: 0.2;
+}
+
+.card-user {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #fff;
 }

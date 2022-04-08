@@ -14,19 +14,21 @@ function App() {
     <GithubProvider>
       <AlertProvider>
         <Router>
-          <div className="flex flex-col justify-between h-screen w-10/12 mx-auto">
-            <Navbar />
-            <main className="container mx-auto px-3 pb-16">
-              <Alert />
-              <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/user/:login" element={<User />} />
-                <Route path="/notfound" element={<NotFound />} />
-                <Route path="/*" element={<NotFound />} />
-              </Routes>
-            </main>
-            <Footer />
+          <div className="sm:w-11/12 md:w-10/12 mx-auto">
+            <div className="wrapper flex flex-col justify-between">
+              <Navbar />
+              <main className="container mx-auto px-3 pb-16">
+                <Alert />
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/user/:login" element={<User />} />
+                  <Route path="/notfound" element={<NotFound />} />
+                  <Route path="/*" element={<NotFound />} />
+                </Routes>
+              </main>
+              <Footer />
+            </div>
           </div>
         </Router>
       </AlertProvider>

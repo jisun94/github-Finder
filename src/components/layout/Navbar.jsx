@@ -15,13 +15,13 @@ function Navbar({ title }) {
           <div className="flex justify-end ">
             <Link
               to="/"
-              className="mr-8 font-light text-sm tracking-widest hover:text-zinc-400"
+              className="mr-8  text-sm tracking-widest hover:text-zinc-400"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="font-light text-sm tracking-widest hover:text-zinc-400"
+              className=" text-sm tracking-widest hover:text-zinc-400"
             >
               About
             </Link>

@@ -25,17 +25,17 @@ function UserSearch() {
       <div>
         <form onSubmit={handleSubmit}>
           <div className="form-control">
-            <div className="relative mb-3">
+            <div className="relative mb-3 shadow-xl rounded-xl">
               <input
                 type="text"
-                className="w-full bg-gray-200 input input-lg text-black"
+                className="w-full bg-white input input-lg text-black"
                 placeholder="Search"
                 value={text}
                 onChange={handleText}
               />
               <button
                 type="submit"
-                className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg"
+                className="absolute top-0 right-0 rounded-l-none sm:w-32 md:w-36 btn btn-lg bg-[#1f2937] border-0"
               >
                 Go
               </button>
@@ -45,7 +45,10 @@ function UserSearch() {
       </div>
       {users.length > 0 && (
         <div>
-          <button className="btn btn-outline" onClick={clearUsers}>
+          <button
+            className="btn btn-outline font-semibold mt-5 text-zinc-600"
+            onClick={clearUsers}
+          >
             Clear
           </button>
         </div>

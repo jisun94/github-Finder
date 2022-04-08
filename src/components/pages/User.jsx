@@ -37,13 +37,13 @@ function User() {
   }
   return (
     <>
-      <div className="w-full mx-auto lg:w-10/12">
+      <div className="w-full mx-auto">
         <div className="mb-4">
           <Link to="/" className="btn btn-outline">
             Back To Search
           </Link>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 items-center mb-8 md:gap-8">
           <div className="custom-card-image mb-6 md:mb-0">
             <div className="rounded-lg shadow-xl card image-full">
               <figure>
@@ -56,7 +56,7 @@ function User() {
             </div>
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-2 ">
             <div className="mb-6">
               <h1 className="text-3xl card-title">
                 {name}
@@ -77,47 +77,43 @@ function User() {
                 </a>
               </div>
             </div>
-
-            <div className="w-full rounded-lg shadow-md stats">
-              {location && (
-                <div className="stat">
-                  <div className="stat-title text-md">Location</div>
-                  <div className="text-lg stat-value">{location}</div>
-                </div>
-              )}
-              {blog && (
-                <div className="stat">
-                  <div className="stat-title text-md">Website</div>
-                  <div className="text-lg stat-value">
-                    <a
-                      href={`https://${blog}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {blog}
-                    </a>
-                  </div>
-                </div>
-              )}
-              {twitter_username && (
-                <div className="stat">
-                  <div className="stat-title text-md">Twitter</div>
-                  <div className="text-lg stat-value">
-                    <a
-                      href={`https://twitter.com/${twitter_username}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {twitter_username}
-                    </a>
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
         </div>
 
-        <div className="w-full py-5 mb-6 rounded-lg shadow-md stats">
+        <div className="w-full mb-6 rounded-lg shadow-md stats stats-vertical xl:stats-horizontal stat-bg">
+          {location && (
+            <div className="stat">
+              <div className="stat-title text-md">Location</div>
+              <div className="text-lg stat-value">{location}</div>
+            </div>
+          )}
+          {blog && (
+            <div className="stat">
+              <div className="stat-title text-md">Website</div>
+              <div className="text-lg stat-value">
+                <a href={`https://${blog}`} target="_blank" rel="noreferrer">
+                  {blog}
+                </a>
+              </div>
+            </div>
+          )}
+          {twitter_username && (
+            <div className="stat">
+              <div className="stat-title text-md">Twitter</div>
+              <div className="text-lg stat-value">
+                <a
+                  href={`https://twitter.com/${twitter_username}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {twitter_username}
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="w-full py-5 mb-6 rounded-lg shadow-md stats stats-vertical xl:stats-horizontal stat-bg">
           <div className="stat">
             <div className="stat-figure">
               <FaUsers className="text-3xl md:text-5xl" />
